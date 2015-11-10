@@ -1,4 +1,5 @@
 require 'virtus'
+require 'rest-client'
 
 module ArenaApi
   class Session
