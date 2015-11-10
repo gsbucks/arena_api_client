@@ -2,6 +2,9 @@ require 'virtus'
 require 'rest-client'
 
 module ArenaApi
+  class FailedLogin < StandardError
+  end
+
   class Session
     include Virtus.model
 
@@ -21,7 +24,7 @@ module ArenaApi
 
       new(JSON.parse(resp))
     rescue RestClient::BadRequest => e
-      raise ArenaApi::BadRequest,
+      raise FailedLogin,
         'Arena could not handle request. Ensure API is enabled and sent parameters match API',
         e.inspect
     end
