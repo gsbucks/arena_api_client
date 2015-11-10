@@ -16,10 +16,6 @@ module ArenaApi
         self.class.format = original_format
       end
     end
-
-    # attribute :file,    String  #REFERENCE: The associated file. See File object.
-    # attribute :guid,    String  #The unique identifier for a file association.
-    # attribute :primary, Boolean #Indicates whether or not a file is primary (primary files are linked from the main view of objects to which they are associated.)
   end
 end
 
