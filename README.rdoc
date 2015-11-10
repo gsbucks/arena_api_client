@@ -1,0 +1,16 @@
+= ArenaApi
+
+""" Configuration
+ArenaApi::Configuration.configure do |c|
+  workspace (sandbox = 896631293)
+end
+
+
+""" Supported:
+items = ArenaApi::Item.all
+items.first.bom_items
+items.first.files
+items.first.files.first.content
+
+
+This project uses MIT-LICENSE.
