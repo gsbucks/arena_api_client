@@ -4,6 +4,7 @@ require 'arena_api/configuration'
 
 module ArenaApi
   API_VERSION = 'v1'
+  COLLECTION_LIMIT = 400
 end
 require 'arena_api/resource'
 require 'arena_api/bom_item'
