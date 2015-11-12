@@ -15,7 +15,7 @@ module ArenaApi
     end
 
     def self.session_token
-      (@session ||= Session.create).token
+      (@@session ||= Session.create).token
     end
 
   end
