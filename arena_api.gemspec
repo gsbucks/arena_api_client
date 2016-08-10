@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rest-client', '~> 1.8.0'
   s.add_dependency 'virtus', '~> 1.0.5'
-  s.add_dependency 'activeresource', '~> 4.0.0'
+  s.add_dependency 'activeresource'
 
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'pry'
